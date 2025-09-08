@@ -20,51 +20,6 @@ Fetch Star Wars data → Encrypt sensitive fields → Log and analyze!
 
 ---
 
-## 🛠️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/alexntelifilippidis/Force-encryption.git
-cd Force-encryption
-```
-
-Install dependencies (use a virtual environment recommended):
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ⚡ Usage
-
-Run the main script to fetch, encrypt, and log Star Wars data:
-
-```bash
-python src/main.py
-```
-
-You can configure logging and debug options in the code.
-
----
-
-## 🧩 Project Structure
-
-```
-Force-encryption/
-├── src/
-│   ├── swapi_reader.py      # Fetches and processes SWAPI data
-│   ├── crypto_utils.py      # Encryption utilities
-│   ├── main.py              # Entry point
-│   └── ...
-├── tests/                   # Unit tests
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## 🔒 Encryption
 
 Sensitive fields (e.g., `birth_year`) are encrypted using the `JSONKeyEncryptor` class before further processing. This ensures data privacy and security.
